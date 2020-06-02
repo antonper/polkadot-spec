@@ -1,4 +1,4 @@
-<TeXmacs|1.99.12>
+<TeXmacs|1.99.11>
 
 <project|polkadot_host_spec.tm>
 
@@ -466,7 +466,66 @@
     transaction>>|<row|<cell|<verbatim|0x020102>>|<cell|Custom>|<cell|Any
     other custom invalidity of unknown size>>>>>|Identifiers of the Apply
     error type>
+
+    <item>Returns a result consisting of possibly nested varying data types
+    as defined in section X.
+
+    <\big-table|<tabular|<tformat|<table|<row|<cell|Id>|<cell|Description>>>>>>
+      \;
+    </big-table>
+
+    A
   </itemize-dot>
+
+  <\definition>
+    <strong|ApplyExtrinsicResult> is the varying data type <strong|Result> as
+    defined in Definition X.
+
+    <\big-table|<tabular|<tformat|<cwith|2|2|1|-1|cell-bborder|1ln>|<cwith|3|3|1|-1|cell-tborder|1ln>|<cwith|2|2|1|1|cell-lborder|0ln>|<cwith|2|2|3|3|cell-rborder|0ln>|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|0ln>|<cwith|3|3|1|-1|cell-bborder|0ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Outcome
+    of dispatching the extrinsic.>|<cell|DispatchOutcome>>|<row|<cell|1>|<cell|Possible
+    errors while checking the>|<cell|TransactionValidityError>>|<row|<cell|>|<cell|validity
+    of a transaction.>|<cell|>>>>>>
+      Possible values of varying data type <strong|ApplyExtrinsicResult>
+    </big-table>
+  </definition>
+
+  <\definition>
+    <strong|DispatchOutcome> is the varying data type <strong|Result> as
+    defined in Definition X.
+
+    <\big-table|<tabular|<tformat|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|3|3|1|-1|cell-tborder|0ln>|<cwith|2|2|1|-1|cell-bborder|0ln>|<cwith|3|3|1|1|cell-lborder|0ln>|<cwith|3|3|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|1ln>|<cwith|3|3|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Extrinsic
+    is valid and was submitted successfully.>|<cell|None>>|<row|<cell|>|<cell|successfully.>|<cell|>>|<row|<cell|1>|<cell|Possible
+    errors while dispatching the extrinsic.>|<cell|DispatchError>>>>>>
+      Possible values of varying data type <strong|DispatchOutcome>.
+    </big-table>
+  </definition>
+
+  <\definition>
+    DispatchError is a varying data type as defined in Definition Y.
+
+    <\big-table|<tabular|<tformat|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|3|3|1|-1|cell-tborder|0ln>|<cwith|2|2|1|-1|cell-bborder|0ln>|<cwith|3|3|1|1|cell-lborder|0ln>|<cwith|3|3|3|3|cell-rborder|0ln>|<cwith|6|6|1|-1|cell-bborder|1ln>|<cwith|6|6|1|1|cell-lborder|0ln>|<cwith|6|6|3|3|cell-rborder|0ln>|<cwith|5|5|1|-1|cell-bborder|1ln>|<cwith|6|6|1|-1|cell-tborder|1ln>|<cwith|5|5|1|1|cell-lborder|0ln>|<cwith|5|5|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|1ln>|<cwith|3|3|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-tborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Some
+    unknown error occured.>|<cell|SCALE encoded byte array
+    contain->>|<row|<cell|>|<cell|>|<cell|ing a valid UTF-8
+    sequence.>>|<row|<cell|1>|<cell|Failed to lookup some
+    data.>|<cell|None>>|<row|<cell|2>|<cell|A bad
+    origin.>|<cell|None>>|<row|<cell|3>|<cell|A custom error in a
+    module.>|<cell|CustomModuleError>>>>>>
+      \;
+    </big-table>
+
+    The custom error in a module is a tuple structured as:
+
+    <\big-table|<tabular|<tformat|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|3|3|1|-1|cell-tborder|0ln>|<cwith|2|2|1|-1|cell-bborder|0ln>|<cwith|3|3|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-tborder|1ln>|<cwith|3|3|1|1|cell-lborder|0ln>|<cwith|3|3|3|3|cell-rborder|0ln>|<cwith|5|5|1|-1|cell-tborder|0ln>|<cwith|4|4|1|-1|cell-bborder|0ln>|<cwith|5|5|1|-1|cell-bborder|1ln>|<cwith|6|6|1|-1|cell-tborder|1ln>|<cwith|5|5|1|1|cell-lborder|0ln>|<cwith|5|5|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Name>>|<cell|<strong|Description>>|<cell|<strong|Type>>>|<row|<cell|Index>|<cell|Module
+    index matching the>|<cell|Unsigned 8-bit>>|<row|<cell|>|<cell|metadata
+    module index.>|<cell|integer>>|<row|<cell|Error>|<cell|Module specific
+    error value.>|<cell|Unsigned 8-bit>>|<row|<cell|>|<cell|>|<cell|integer>>|<row|<cell|Message>|<cell|Optional
+    error message.>|<cell|Varying data type <strong|Option>
+    (X).>>|<row|<cell|>|<cell|>|<cell|The optional value is a
+    SCALE>>|<row|<cell|>|<cell|>|<cell|encoded byte array containing a
+    >>|<row|<cell|>|<cell|>|<cell|valid UTF-8 sequence.>>>>>>
+      \;
+    </big-table>
+  </definition>
 
   <subsection|<verbatim|BlockBuilder_inherent_extrinsics>>
 
@@ -507,8 +566,8 @@
 
 <\initial>
   <\collection>
-    <associate|chapter-nr|5>
-    <associate|page-first|101>
+    <associate|chapter-nr|6>
+    <associate|page-first|107>
     <associate|page-height|auto>
     <associate|page-type|letter>
     <associate|page-width|auto>
@@ -532,8 +591,13 @@
     <associate|auto-19|<tuple|A.7|?>>
     <associate|auto-2|<tuple|A.1|?>>
     <associate|auto-20|<tuple|A.8|?>>
-    <associate|auto-21|<tuple|A.2.9|?>>
-    <associate|auto-22|<tuple|A.2.10|?>>
+    <associate|auto-21|<tuple|A.9|?>>
+    <associate|auto-22|<tuple|A.10|?>>
+    <associate|auto-23|<tuple|A.11|?>>
+    <associate|auto-24|<tuple|A.12|?>>
+    <associate|auto-25|<tuple|A.13|?>>
+    <associate|auto-26|<tuple|A.2.9|?>>
+    <associate|auto-27|<tuple|A.2.10|?>>
     <associate|auto-3|<tuple|A.1|?>>
     <associate|auto-4|<tuple|A.2|?>>
     <associate|auto-5|<tuple|A.2.1|?>>
