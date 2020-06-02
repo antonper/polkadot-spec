@@ -515,9 +515,9 @@
     <reference|defn-varrying-data-type>. Specifies the invalidity of the
     transaction in more detail.
 
-    <\big-table|<tabular|<tformat|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-bborder|1ln>|<cwith|3|3|1|-1|cell-tborder|1ln>|<cwith|2|2|1|1|cell-lborder|0ln>|<cwith|2|2|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|0ln>|<cwith|3|3|1|-1|cell-bborder|0ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-tborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<cwith|6|6|1|-1|cell-tborder|0ln>|<cwith|5|5|1|-1|cell-bborder|0ln>|<cwith|6|6|1|-1|cell-bborder|1ln>|<cwith|7|7|1|-1|cell-tborder|1ln>|<cwith|6|6|1|1|cell-lborder|0ln>|<cwith|6|6|3|3|cell-rborder|0ln>|<cwith|8|8|1|-1|cell-tborder|0ln>|<cwith|7|7|1|-1|cell-bborder|0ln>|<cwith|8|8|1|-1|cell-bborder|1ln>|<cwith|9|9|1|-1|cell-tborder|1ln>|<cwith|8|8|1|1|cell-lborder|0ln>|<cwith|8|8|3|3|cell-rborder|0ln>|<cwith|10|10|1|-1|cell-tborder|0ln>|<cwith|9|9|1|-1|cell-bborder|0ln>|<cwith|10|10|1|1|cell-lborder|0ln>|<cwith|10|10|3|3|cell-rborder|0ln>|<cwith|11|11|1|-1|cell-tborder|0ln>|<cwith|10|10|1|-1|cell-bborder|0ln>|<cwith|11|11|1|-1|cell-bborder|1ln>|<cwith|12|12|1|-1|cell-tborder|1ln>|<cwith|11|11|1|1|cell-lborder|0ln>|<cwith|11|11|3|3|cell-rborder|0ln>|<cwith|13|13|1|-1|cell-tborder|0ln>|<cwith|12|12|1|-1|cell-bborder|0ln>|<cwith|13|13|1|-1|cell-bborder|1ln>|<cwith|14|14|1|-1|cell-tborder|1ln>|<cwith|13|13|1|1|cell-lborder|0ln>|<cwith|13|13|3|3|cell-rborder|0ln>|<cwith|15|15|1|-1|cell-tborder|0ln>|<cwith|14|14|1|-1|cell-bborder|0ln>|<cwith|15|15|1|-1|cell-bborder|1ln>|<cwith|16|16|1|-1|cell-tborder|1ln>|<cwith|15|15|1|1|cell-lborder|0ln>|<cwith|15|15|3|3|cell-rborder|0ln>|<cwith|17|17|1|-1|cell-tborder|0ln>|<cwith|16|16|1|-1|cell-bborder|0ln>|<cwith|17|17|1|1|cell-lborder|0ln>|<cwith|17|17|3|3|cell-rborder|0ln>|<cwith|18|18|1|-1|cell-tborder|0ln>|<cwith|17|17|1|-1|cell-bborder|0ln>|<cwith|18|18|1|-1|cell-bborder|1ln>|<cwith|18|18|1|1|cell-lborder|0ln>|<cwith|18|18|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Call
+    <\big-table|<tabular|<tformat|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-bborder|1ln>|<cwith|3|3|1|-1|cell-tborder|1ln>|<cwith|2|2|1|1|cell-lborder|0ln>|<cwith|2|2|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|0ln>|<cwith|3|3|1|-1|cell-bborder|0ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-tborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<cwith|6|6|1|-1|cell-tborder|0ln>|<cwith|5|5|1|-1|cell-bborder|0ln>|<cwith|6|6|1|-1|cell-bborder|1ln>|<cwith|7|7|1|-1|cell-tborder|1ln>|<cwith|6|6|1|1|cell-lborder|0ln>|<cwith|6|6|3|3|cell-rborder|0ln>|<cwith|8|8|1|-1|cell-tborder|0ln>|<cwith|7|7|1|-1|cell-bborder|0ln>|<cwith|8|8|1|-1|cell-bborder|1ln>|<cwith|9|9|1|-1|cell-tborder|1ln>|<cwith|8|8|1|1|cell-lborder|0ln>|<cwith|8|8|3|3|cell-rborder|0ln>|<cwith|11|11|1|-1|cell-bborder|1ln>|<cwith|12|12|1|-1|cell-tborder|1ln>|<cwith|11|11|1|1|cell-lborder|0ln>|<cwith|11|11|3|3|cell-rborder|0ln>|<cwith|13|13|1|-1|cell-tborder|0ln>|<cwith|12|12|1|-1|cell-bborder|0ln>|<cwith|13|13|1|-1|cell-bborder|1ln>|<cwith|14|14|1|-1|cell-tborder|1ln>|<cwith|13|13|1|1|cell-lborder|0ln>|<cwith|13|13|3|3|cell-rborder|0ln>|<cwith|15|15|1|-1|cell-tborder|0ln>|<cwith|14|14|1|-1|cell-bborder|0ln>|<cwith|15|15|1|-1|cell-bborder|1ln>|<cwith|16|16|1|-1|cell-tborder|1ln>|<cwith|15|15|1|1|cell-lborder|0ln>|<cwith|15|15|3|3|cell-rborder|0ln>|<cwith|10|10|1|-1|cell-tborder|0ln>|<cwith|9|9|1|-1|cell-bborder|0ln>|<cwith|10|10|1|-1|cell-bborder|1ln>|<cwith|11|11|1|-1|cell-tborder|1ln>|<cwith|10|10|1|1|cell-lborder|0ln>|<cwith|10|10|3|3|cell-rborder|0ln>|<cwith|17|17|1|-1|cell-tborder|0ln>|<cwith|16|16|1|-1|cell-bborder|0ln>|<cwith|17|17|1|1|cell-lborder|0ln>|<cwith|17|17|3|3|cell-rborder|0ln>|<cwith|19|19|1|-1|cell-bborder|1ln>|<cwith|18|19|1|1|cell-lborder|0ln>|<cwith|18|19|3|3|cell-rborder|0ln>|<cwith|18|18|1|-1|cell-tborder|1ln>|<cwith|17|17|1|-1|cell-bborder|1ln>|<cwith|18|18|1|-1|cell-bborder|0ln>|<cwith|19|19|1|-1|cell-tborder|0ln>|<cwith|18|18|1|1|cell-lborder|0ln>|<cwith|18|18|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Call
     of the transaction is not expected.>|<cell|None>>|<row|<cell|1>|<cell|General
-    error to do with the inavility to pay>|<cell|None>>|<row|<cell|>|<cell|some
+    error to do with the inability to pay>|<cell|None>>|<row|<cell|>|<cell|some
     fees (e.g. account balance too low).>|<cell|>>|<row|<cell|2>|<cell|General
     error to do with the transaction>|<cell|None>>|<row|<cell|>|<cell|not
     being valid (e.g. nonce too high).>|<cell|>>|<row|<cell|3>|<cell|General
@@ -526,13 +526,14 @@
     with the transactions's>|<cell|None>>|<row|<cell|>|<cell|proof (e.g.
     signature)>|<cell|>>|<row|<cell|5>|<cell|The transaction birth block is
     ancient.>|<cell|None>>|<row|<cell|6>|<cell|The transaction would exhaust
-    the resources>|<cell|None>>|<row|<cell|>|<cell|of current
-    block.>|<cell|>>|<row|<cell|7>|<cell|Some uknown error
+    the resources>|<cell|None>>|<row|<cell|>|<cell|of the current
+    block.>|<cell|>>|<row|<cell|7>|<cell|Some unknown error
     occured.>|<cell|Unsigned>>|<row|<cell|>|<cell|>|<cell|8-bit
     integer>>|<row|<cell|8>|<cell|An extrinsic with mandatory dispatch
     resulted>|<cell|None>>|<row|<cell|>|<cell|in an
     error.>|<cell|>>|<row|<cell|9>|<cell|A transaction with a mandatory
-    dispatch.>|<cell|None>>>>>>
+    dispatch (only in->|<cell|None>>|<row|<cell|>|<cell|herents are allowed
+    to have mandatory dispatch).>|<cell|>>>>>>
       Possible values of varying data type <strong|InvalidTransaction>.
     </big-table>
   </definition>
@@ -699,7 +700,7 @@
 
       <tuple|normal|<\surround|<hidden-binding|<tuple>|A.7>|>
         Possible values of varying data type
-        <with|font-series|<quote|bold>|math-font-series|<quote|bold>|ApplyExtrinsicResult>
+        <with|font-series|<quote|bold>|math-font-series|<quote|bold>|ApplyExtrinsicResult>.
       </surround>|<pageref|auto-19>>
 
       <tuple|normal|<\surround|<hidden-binding|<tuple>|A.8>|>
@@ -708,23 +709,28 @@
       </surround>|<pageref|auto-20>>
 
       <tuple|normal|<\surround|<hidden-binding|<tuple>|A.9>|>
-        \;
+        Possible values of varying data type
+        <with|font-series|<quote|bold>|math-font-series|<quote|bold>|DispatchError>.
       </surround>|<pageref|auto-21>>
 
       <tuple|normal|<\surround|<hidden-binding|<tuple>|A.10>|>
-        \;
+        Possible values of varying data type
+        <with|font-series|<quote|bold>|math-font-series|<quote|bold>|CustomModuleError>.
       </surround>|<pageref|auto-22>>
 
       <tuple|normal|<\surround|<hidden-binding|<tuple>|A.11>|>
-        \;
+        Possible values of varying data type
+        <with|font-series|<quote|bold>|math-font-series|<quote|bold>|TransactionValidityError>.
       </surround>|<pageref|auto-23>>
 
       <tuple|normal|<\surround|<hidden-binding|<tuple>|A.12>|>
-        \;
+        Possible values of varying data type
+        <with|font-series|<quote|bold>|math-font-series|<quote|bold>|InvalidTransaction>.
       </surround>|<pageref|auto-24>>
 
       <tuple|normal|<\surround|<hidden-binding|<tuple>|A.13>|>
-        \;
+        Possible values of varying data type
+        <with|font-series|<quote|bold>|math-font-series|<quote|bold>|UnknownTransaction>.
       </surround>|<pageref|auto-25>>
     </associate>
     <\associate|toc>
