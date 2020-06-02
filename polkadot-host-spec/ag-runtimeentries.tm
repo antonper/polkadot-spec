@@ -432,9 +432,10 @@
 
   <\definition>
     <label|defn-rte-apply-extrinsic-result><strong|ApplyExtrinsicResult> is
-    the varying data type <strong|Result> as defined in Definition X. This
-    structure can contain multiple nested structures, indicating either
-    module dispatch outcomes or transaction invalidity errors.
+    the varying data type <strong|Result> as defined in Definition
+    <reference|defn-result-type>. This structure can contain multiple nested
+    structures, indicating either module dispatch outcomes or transaction
+    invalidity errors.
 
     <\big-table|<tabular|<tformat|<cwith|2|2|1|-1|cell-bborder|1ln>|<cwith|3|3|1|-1|cell-tborder|1ln>|<cwith|2|2|1|1|cell-lborder|0ln>|<cwith|2|2|3|3|cell-rborder|0ln>|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|0ln>|<cwith|3|3|1|-1|cell-bborder|0ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Outcome
     of dispatching the extrinsic.>|<cell|DispatchOutcome
@@ -448,7 +449,8 @@
 
   <\definition>
     <label|defn-rte-dispatch-outcome><strong|DispatchOutcome> is the varying
-    data type <strong|Result> as defined in Definition X.
+    data type <strong|Result> as defined in Definition
+    <reference|defn-result-type>.
 
     <\big-table|<tabular|<tformat|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|2|2|1|-1|cell-bborder|0ln>|<cwith|3|3|1|-1|cell-tborder|1ln>|<cwith|3|3|1|-1|cell-bborder|1ln>|<cwith|3|3|1|1|cell-lborder|0ln>|<cwith|3|3|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Extrinsic
     is valid and was submitted successfully.>|<cell|None>>|<row|<cell|1>|<cell|Possible
@@ -460,8 +462,8 @@
 
   <\definition>
     <label|defn-rte-dispatch-error><strong|DispatchError> is a varying data
-    type as defined in Definition Y. Indicates various reasons why a dispatch
-    call failed.
+    type as defined in Definition <reference|defn-varrying-data-type>.
+    Indicates various reasons why a dispatch call failed.
 
     <\big-table|<tabular|<tformat|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|3|3|1|-1|cell-tborder|0ln>|<cwith|2|2|1|-1|cell-bborder|0ln>|<cwith|3|3|1|1|cell-lborder|0ln>|<cwith|3|3|3|3|cell-rborder|0ln>|<cwith|6|6|1|-1|cell-bborder|1ln>|<cwith|6|6|1|1|cell-lborder|0ln>|<cwith|6|6|3|3|cell-rborder|0ln>|<cwith|5|5|1|-1|cell-bborder|1ln>|<cwith|6|6|1|-1|cell-tborder|1ln>|<cwith|5|5|1|1|cell-lborder|0ln>|<cwith|5|5|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|1ln>|<cwith|3|3|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-tborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Some
     unknown error occured.>|<cell|SCALE encoded byte array
@@ -485,17 +487,18 @@
     index.>|<cell|>>|<row|<cell|Error>|<cell|Module specific error
     value.>|<cell|Unsigned 8-bit integer>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|Message>|<cell|Optional
     error message.>|<cell|Varying data type <strong|Option>
-    (X).>>|<row|<cell|>|<cell|>|<cell|The optional value is a
-    SCALE>>|<row|<cell|>|<cell|>|<cell|encoded byte array containing
-    a>>|<row|<cell|>|<cell|>|<cell|valid UTF-8 sequence.>>>>>>
+    (<reference|defn-option-type>).>>|<row|<cell|>|<cell|>|<cell|The optional
+    value is a SCALE>>|<row|<cell|>|<cell|>|<cell|encoded byte array
+    containing a>>|<row|<cell|>|<cell|>|<cell|valid UTF-8 sequence.>>>>>>
       \;
     </big-table>
   </definition>
 
   <\definition>
     <label|defn-rte-transaction-validity-error><strong|TransactionValidityError>
-    is a varying data type as defined in Definition X. It indicates possible
-    errors that can occur while checking the validity of a transaction.
+    is a varying data type as defined in Definition
+    <reference|defn-varrying-data-type>. It indicates possible errors that
+    can occur while checking the validity of a transaction.
 
     <\big-table|<tabular|<tformat|<cwith|1|-1|1|-1|cell-tborder|1ln>|<cwith|1|-1|1|-1|cell-bborder|1ln>|<cwith|1|-1|1|-1|cell-lborder|0ln>|<cwith|1|-1|1|-1|cell-rborder|0ln>|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Transaction
     is invalid.>|<cell|InvalidTransaction
@@ -508,8 +511,9 @@
 
   <\definition>
     <label|defn-rte-invalid-transaction><strong|InvalidTransaction> is a
-    varying data type as defined in Definition X. Specifies the invalidity of
-    the transaction in more detail.
+    varying data type as defined in Definition
+    <reference|defn-varrying-data-type>. Specifies the invalidity of the
+    transaction in more detail.
 
     <\big-table|<tabular|<tformat|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-bborder|1ln>|<cwith|3|3|1|-1|cell-tborder|1ln>|<cwith|2|2|1|1|cell-lborder|0ln>|<cwith|2|2|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-tborder|0ln>|<cwith|3|3|1|-1|cell-bborder|0ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-tborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<cwith|6|6|1|-1|cell-tborder|0ln>|<cwith|5|5|1|-1|cell-bborder|0ln>|<cwith|6|6|1|-1|cell-bborder|1ln>|<cwith|7|7|1|-1|cell-tborder|1ln>|<cwith|6|6|1|1|cell-lborder|0ln>|<cwith|6|6|3|3|cell-rborder|0ln>|<cwith|8|8|1|-1|cell-tborder|0ln>|<cwith|7|7|1|-1|cell-bborder|0ln>|<cwith|8|8|1|-1|cell-bborder|1ln>|<cwith|9|9|1|-1|cell-tborder|1ln>|<cwith|8|8|1|1|cell-lborder|0ln>|<cwith|8|8|3|3|cell-rborder|0ln>|<cwith|10|10|1|-1|cell-tborder|0ln>|<cwith|9|9|1|-1|cell-bborder|0ln>|<cwith|10|10|1|1|cell-lborder|0ln>|<cwith|10|10|3|3|cell-rborder|0ln>|<cwith|11|11|1|-1|cell-tborder|0ln>|<cwith|10|10|1|-1|cell-bborder|0ln>|<cwith|11|11|1|-1|cell-bborder|1ln>|<cwith|12|12|1|-1|cell-tborder|1ln>|<cwith|11|11|1|1|cell-lborder|0ln>|<cwith|11|11|3|3|cell-rborder|0ln>|<cwith|13|13|1|-1|cell-tborder|0ln>|<cwith|12|12|1|-1|cell-bborder|0ln>|<cwith|13|13|1|-1|cell-bborder|1ln>|<cwith|14|14|1|-1|cell-tborder|1ln>|<cwith|13|13|1|1|cell-lborder|0ln>|<cwith|13|13|3|3|cell-rborder|0ln>|<cwith|15|15|1|-1|cell-tborder|0ln>|<cwith|14|14|1|-1|cell-bborder|0ln>|<cwith|15|15|1|-1|cell-bborder|1ln>|<cwith|16|16|1|-1|cell-tborder|1ln>|<cwith|15|15|1|1|cell-lborder|0ln>|<cwith|15|15|3|3|cell-rborder|0ln>|<cwith|17|17|1|-1|cell-tborder|0ln>|<cwith|16|16|1|-1|cell-bborder|0ln>|<cwith|17|17|1|1|cell-lborder|0ln>|<cwith|17|17|3|3|cell-rborder|0ln>|<cwith|18|18|1|-1|cell-tborder|0ln>|<cwith|17|17|1|-1|cell-bborder|0ln>|<cwith|18|18|1|-1|cell-bborder|1ln>|<cwith|18|18|1|1|cell-lborder|0ln>|<cwith|18|18|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Call
     of the transaction is not expected.>|<cell|None>>|<row|<cell|1>|<cell|General
@@ -535,8 +539,9 @@
 
   <\definition>
     <label|defn-rte-unknown-transaction><strong|UnknownTransaction> is a
-    varying data type as defined in Definition X. Specifies the unknown
-    invalidity of the transaction in more detail.
+    varying data type as defined in Definition
+    <reference|defn-varrying-data-type>. Specifies the unknown invalidity of
+    the transaction in more detail.
 
     <\big-table|<tabular|<tformat|<cwith|1|1|1|-1|cell-tborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|2|2|1|-1|cell-tborder|1ln>|<cwith|1|1|1|1|cell-lborder|0ln>|<cwith|1|1|3|3|cell-rborder|0ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|5|5|1|-1|cell-tborder|1ln>|<cwith|4|4|1|1|cell-lborder|0ln>|<cwith|4|4|3|3|cell-rborder|0ln>|<cwith|6|6|1|-1|cell-tborder|0ln>|<cwith|5|5|1|-1|cell-bborder|0ln>|<cwith|6|6|1|-1|cell-bborder|1ln>|<cwith|6|6|1|1|cell-lborder|0ln>|<cwith|6|6|3|3|cell-rborder|0ln>|<cwith|3|3|1|-1|cell-tborder|0ln>|<cwith|2|2|1|-1|cell-bborder|0ln>|<cwith|3|3|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-tborder|1ln>|<cwith|3|3|1|1|cell-lborder|0ln>|<cwith|3|3|3|3|cell-rborder|0ln>|<table|<row|<cell|<strong|Id>>|<cell|<strong|Description>>|<cell|<strong|Appended>>>|<row|<cell|0>|<cell|Could
     not lookup some information that is required
