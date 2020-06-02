@@ -443,7 +443,7 @@
     errors while checking the>|<cell|TransactionValidityError
     (<reference|defn-rte-transaction-validity-error>)>>|<row|<cell|>|<cell|validity
     of a transaction.>|<cell|>>>>>>
-      Possible values of varying data type <strong|ApplyExtrinsicResult>
+      Possible values of varying data type <strong|ApplyExtrinsicResult>.
     </big-table>
   </definition>
 
@@ -472,7 +472,7 @@
     data.>|<cell|None>>|<row|<cell|2>|<cell|A bad
     origin.>|<cell|None>>|<row|<cell|3>|<cell|A custom error in a
     module.>|<cell|CustomModuleError (<reference|defn-rte-custom-module-error>)>>>>>>
-      \;
+      Possible values of varying data type <strong|DispatchError>.
     </big-table>
   </definition>
 
@@ -490,7 +490,7 @@
     (<reference|defn-option-type>).>>|<row|<cell|>|<cell|>|<cell|The optional
     value is a SCALE>>|<row|<cell|>|<cell|>|<cell|encoded byte array
     containing a>>|<row|<cell|>|<cell|>|<cell|valid UTF-8 sequence.>>>>>>
-      \;
+      Possible values of varying data type <strong|CustomModuleError>.
     </big-table>
   </definition>
 
@@ -505,7 +505,7 @@
     (<reference|defn-rte-invalid-transaction>)>>|<row|<cell|1>|<cell|Transaction
     validity can't be determined.>|<cell|UnknownTransaction
     (<reference|defn-rte-unknown-transaction>)>>>>>>
-      \;
+      Possible values of varying data type <strong|TransactionValidityError>.
     </big-table>
   </definition>
 
@@ -533,7 +533,7 @@
     resulted>|<cell|None>>|<row|<cell|>|<cell|in an
     error.>|<cell|>>|<row|<cell|9>|<cell|A transaction with a mandatory
     dispatch.>|<cell|None>>>>>>
-      \;
+      Possible values of varying data type <strong|InvalidTransaction>.
     </big-table>
   </definition>
 
@@ -550,7 +550,7 @@
     given unsigned transaction.>|<cell|None>>|<row|<cell|2>|<cell|Any other
     custom unknown validity that is not covered>|<cell|Unsigned>>|<row|<cell|>|<cell|by
     this enum.>|<cell|8-bit integer>>>>>>
-      \;
+      Possible values of varying data type <strong|UnknownTransaction>.
     </big-table>
   </definition>
 
@@ -607,58 +607,58 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|A|?>>
-    <associate|auto-10|<tuple|A.2.5|?>>
-    <associate|auto-11|<tuple|A.2|?>>
-    <associate|auto-12|<tuple|A.2.6|?>>
-    <associate|auto-13|<tuple|A.2.7|?>>
-    <associate|auto-14|<tuple|A.3|?>>
-    <associate|auto-15|<tuple|A.4|?>>
-    <associate|auto-16|<tuple|A.5|?>>
-    <associate|auto-17|<tuple|A.6|?>>
-    <associate|auto-18|<tuple|A.2.8|?>>
-    <associate|auto-19|<tuple|A.7|?>>
-    <associate|auto-2|<tuple|A.1|?>>
-    <associate|auto-20|<tuple|A.8|?>>
-    <associate|auto-21|<tuple|A.9|?>>
-    <associate|auto-22|<tuple|A.10|?>>
-    <associate|auto-23|<tuple|A.11|?>>
-    <associate|auto-24|<tuple|A.12|?>>
-    <associate|auto-25|<tuple|A.13|?>>
-    <associate|auto-26|<tuple|A.2.9|?>>
-    <associate|auto-27|<tuple|A.2.10|?>>
+    <associate|auto-1|<tuple|A|107>>
+    <associate|auto-10|<tuple|A.2.5|109>>
+    <associate|auto-11|<tuple|A.2|109>>
+    <associate|auto-12|<tuple|A.2.6|109>>
+    <associate|auto-13|<tuple|A.2.7|109>>
+    <associate|auto-14|<tuple|A.3|110>>
+    <associate|auto-15|<tuple|A.4|110>>
+    <associate|auto-16|<tuple|A.5|110>>
+    <associate|auto-17|<tuple|A.6|111>>
+    <associate|auto-18|<tuple|A.2.8|111>>
+    <associate|auto-19|<tuple|A.7|111>>
+    <associate|auto-2|<tuple|A.1|107>>
+    <associate|auto-20|<tuple|A.8|111>>
+    <associate|auto-21|<tuple|A.9|111>>
+    <associate|auto-22|<tuple|A.10|112>>
+    <associate|auto-23|<tuple|A.11|112>>
+    <associate|auto-24|<tuple|A.12|112>>
+    <associate|auto-25|<tuple|A.13|112>>
+    <associate|auto-26|<tuple|A.2.9|113>>
+    <associate|auto-27|<tuple|A.2.10|113>>
     <associate|auto-28|<tuple|A.2.9|?>>
     <associate|auto-29|<tuple|A.2.10|?>>
-    <associate|auto-3|<tuple|A.1|?>>
+    <associate|auto-3|<tuple|A.1|107>>
     <associate|auto-30|<tuple|A.2.10|?>>
-    <associate|auto-4|<tuple|A.2|?>>
-    <associate|auto-5|<tuple|A.2.1|?>>
-    <associate|auto-6|<tuple|A.1|?>>
-    <associate|auto-7|<tuple|A.2.2|?>>
-    <associate|auto-8|<tuple|A.2.3|?>>
-    <associate|auto-9|<tuple|A.2.4|?>>
-    <associate|defn-invalid-transaction|<tuple|A.3|?>>
-    <associate|defn-rt-blockbuilder-finalize-block|<tuple|A.2.10|?>>
-    <associate|defn-rt-core-execute-block|<tuple|A.2.2|?>>
-    <associate|defn-rt-core-version|<tuple|A.2.1|?>>
-    <associate|defn-rte-apply-extrinsic-result|<tuple|A.5|?>>
-    <associate|defn-rte-custom-module-error|<tuple|A.8|?>>
-    <associate|defn-rte-dispatch-error|<tuple|A.7|?>>
-    <associate|defn-rte-dispatch-outcome|<tuple|A.6|?>>
-    <associate|defn-rte-invalid-transaction|<tuple|A.10|?>>
-    <associate|defn-rte-transaction-validity-error|<tuple|A.9|?>>
-    <associate|defn-rte-unknown-transaction|<tuple|A.11|?>>
-    <associate|defn-transaction-validity-error|<tuple|A.2|?>>
-    <associate|defn-unknown-transaction|<tuple|A.4|?>>
-    <associate|defn-valid-transaction|<tuple|A.1|?>>
-    <associate|sect-list-of-runtime-entries|<tuple|A.1|?>>
-    <associate|sect-rte-babeapi-epoch|<tuple|A.2.5|?>>
-    <associate|sect-rte-core-execute-block|<tuple|A.2.2|?>>
-    <associate|sect-rte-grandpa-auth|<tuple|A.2.6|?>>
-    <associate|sect-rte-hash-and-length|<tuple|A.2.4|?>>
-    <associate|sect-rte-validate-transaction|<tuple|A.2.7|?>>
-    <associate|sect-runtime-entries|<tuple|A|?>>
-    <associate|snippet-runtime-enteries|<tuple|A.1|?>>
+    <associate|auto-4|<tuple|A.2|107>>
+    <associate|auto-5|<tuple|A.2.1|108>>
+    <associate|auto-6|<tuple|A.1|108>>
+    <associate|auto-7|<tuple|A.2.2|108>>
+    <associate|auto-8|<tuple|A.2.3|108>>
+    <associate|auto-9|<tuple|A.2.4|109>>
+    <associate|defn-invalid-transaction|<tuple|A.3|110>>
+    <associate|defn-rt-blockbuilder-finalize-block|<tuple|A.2.10|113>>
+    <associate|defn-rt-core-execute-block|<tuple|A.2.2|108>>
+    <associate|defn-rt-core-version|<tuple|A.2.1|108>>
+    <associate|defn-rte-apply-extrinsic-result|<tuple|A.5|111>>
+    <associate|defn-rte-custom-module-error|<tuple|A.8|111>>
+    <associate|defn-rte-dispatch-error|<tuple|A.7|111>>
+    <associate|defn-rte-dispatch-outcome|<tuple|A.6|111>>
+    <associate|defn-rte-invalid-transaction|<tuple|A.10|112>>
+    <associate|defn-rte-transaction-validity-error|<tuple|A.9|112>>
+    <associate|defn-rte-unknown-transaction|<tuple|A.11|112>>
+    <associate|defn-transaction-validity-error|<tuple|A.2|110>>
+    <associate|defn-unknown-transaction|<tuple|A.4|110>>
+    <associate|defn-valid-transaction|<tuple|A.1|110>>
+    <associate|sect-list-of-runtime-entries|<tuple|A.1|107>>
+    <associate|sect-rte-babeapi-epoch|<tuple|A.2.5|109>>
+    <associate|sect-rte-core-execute-block|<tuple|A.2.2|108>>
+    <associate|sect-rte-grandpa-auth|<tuple|A.2.6|109>>
+    <associate|sect-rte-hash-and-length|<tuple|A.2.4|109>>
+    <associate|sect-rte-validate-transaction|<tuple|A.2.7|109>>
+    <associate|sect-runtime-entries|<tuple|A|107>>
+    <associate|snippet-runtime-enteries|<tuple|A.1|107>>
   </collection>
 </references>
 
@@ -697,11 +697,35 @@
         <with|font-series|<quote|bold>|math-font-series|<quote|bold>|TransactionValidityError>.
       </surround>|<pageref|auto-17>>
 
-      <tuple|normal|<surround|<hidden-binding|<tuple>|A.7>||Data format of
-      the Dispatch error type>|<pageref|auto-19>>
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|A.7>|>
+        Possible values of varying data type
+        <with|font-series|<quote|bold>|math-font-series|<quote|bold>|ApplyExtrinsicResult>
+      </surround>|<pageref|auto-19>>
 
-      <tuple|normal|<surround|<hidden-binding|<tuple>|A.8>||Identifiers of
-      the Apply error type>|<pageref|auto-20>>
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|A.8>|>
+        Possible values of varying data type
+        <with|font-series|<quote|bold>|math-font-series|<quote|bold>|DispatchOutcome>.
+      </surround>|<pageref|auto-20>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|A.9>|>
+        \;
+      </surround>|<pageref|auto-21>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|A.10>|>
+        \;
+      </surround>|<pageref|auto-22>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|A.11>|>
+        \;
+      </surround>|<pageref|auto-23>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|A.12>|>
+        \;
+      </surround>|<pageref|auto-24>>
+
+      <tuple|normal|<\surround|<hidden-binding|<tuple>|A.13>|>
+        \;
+      </surround>|<pageref|auto-25>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
@@ -750,11 +774,11 @@
 
       <with|par-left|<quote|1tab>|A.2.9<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|BlockBuilder_inherent_extrinsics>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21>>
+      <no-break><pageref|auto-26>>
 
       <with|par-left|<quote|1tab>|A.2.10<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|BlockBuilder_finalize_block>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-22>>
+      <no-break><pageref|auto-27>>
     </associate>
   </collection>
 </auxiliary>
